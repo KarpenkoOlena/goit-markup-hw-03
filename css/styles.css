@@ -10,10 +10,60 @@ a{
 
 ul{
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section{
+    padding: 120px 0;
+}
+
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /*header*/
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-list{
+    display: flex;
+    gap: 40px;
+}
+
+.header-address{
+    display: flex;
+    gap: 40px;
+}
+
 .main-logo{
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -32,6 +82,8 @@ ul{
 }
 
 .header-menu{
+    display: flex;
+    padding: 24px 0;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -63,19 +115,31 @@ ul{
 }
 
 /*section one*/
+
 .section-one{
     background-color: #2E2F42;
+    padding: 188px 0;
+
 }
 
 .section-one-title{
+    max-width: 496px;
+    margin: 0 auto 48px;
     color: #FFF;
     text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    
 }
 
 .button-order{
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     color: #FFF;
     background-color: #4D5AE5;
     font-family: inherit;
@@ -92,12 +156,35 @@ ul{
 }
 
 /*section two*/
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section-two-list{
+    display: flex;
+    gap: 24px;
+}
+
+.section-two-list-items{
+    width: calc((100%-72px)/4);
+}
+
 .section-two-subtitle{
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
 
 .section-two-text{
@@ -111,6 +198,11 @@ ul{
     background-color: #F4F4FD;
 }
 
+.section-three-inner{
+    display: flex;
+    gap: 24px;
+}
+
 .section-three-title{
     color: #2E2F42;
     text-align: center;
@@ -118,10 +210,17 @@ ul{
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team{
     background-color: #FFFFFF;
+    width: calc((100%-72px)/4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-inner{
+    padding: 32px 16px;
 }
 
 .section-three-subtitle{
@@ -131,6 +230,7 @@ ul{
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .sec-three-text{
@@ -148,14 +248,33 @@ ul{
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
+.sec-four-inner{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.sec-four-items{
+    width: calc((100%-48px)/3);
+   
+}
+
+.app-container{
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+        border-top: none;
+}
 .sec-four-subtitle{
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
  
 .sec-four-text{
@@ -167,9 +286,19 @@ ul{
 /*footer*/
 .footer{
     background-color: #2E2F42;
+    padding: 100px 0;
 }
-
 .footer-logo{
+    color: #4D5AE5;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        display: inline-block;
+        margin-bottom: 16px;
+}
+.footer-logo-second{
     color: #F4F4FD;
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -182,4 +311,5 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
